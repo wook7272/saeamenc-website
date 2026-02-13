@@ -63,6 +63,11 @@ img {
     align-items: center;
 }
 
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
 .logo-text {
     font-size: 24px;
     font-weight: 700;
@@ -391,6 +396,11 @@ img {
     font-size: 22px;
     font-weight: 700;
     color: #fff;
+}
+
+.footer-logo-img {
+    height: 40px;
+    width: auto;
 }
 
 .footer-info p {
