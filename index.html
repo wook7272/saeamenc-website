@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>(주)새암이앤씨 - 미래를 설계합니다</title>
-    <meta name="description" content="(주)새암이앤씨 - 도시/단지, 인프라, 건설사업관리, 안전진단, 공공측량 전문 기업">
+    <meta name="description" content="(주)새암이앤씨 - 도시계획, 인프라, 건설사업관리, 안전진단, 공공측량 전문 엔지니어링 기업. Planning Tomorrow, Innovating Urban Solutions.">
+    <meta name="theme-color" content="#143a73">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#company" class="skip-link">본문으로 바로가기</a>
+
     <!-- 헤더 -->
     <header class="header">
         <div class="header-inner">
             <div class="logo">
-                <a href="index.html">
+                <a href="index.html" aria-label="(주)새암이앤씨 홈">
                     <img src="images/logo.png" alt="(주)새암이앤씨" class="logo-img">
                 </a>
             </div>
-            <nav class="nav-menu">
+            <nav class="nav-menu" aria-label="주요 메뉴">
                 <ul>
                     <li><a href="#company">회사소개</a></li>
                     <li><a href="#business">사업분야</a></li>
+                    <li><a href="#projects">수행실적</a></li>
                     <li><a href="#history">연혁</a></li>
                     <li><a href="#news">새암소식</a></li>
                     <li><a href="#contact">오시는 길</a></li>
                 </ul>
+                <a href="tel:032-719-4265" class="nav-cta">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>
+                    032-719-4265
+                </a>
             </nav>
-            <button class="mobile-menu-btn">
+            <button class="mobile-menu-btn" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -36,116 +46,400 @@
 
     <!-- 히어로 섹션 -->
     <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>미래를 설계합니다</h1>
-            <p>도시계획부터 안전진단까지, 종합 엔지니어링 솔루션</p>
-            <a href="#business" class="btn-primary">사업분야 보기</a>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="container hero-content">
+            <p class="hero-eyebrow">마르지 않는 샘물 · SaeAmENC</p>
+            <h1>미래를<br>설계합니다</h1>
+            <p class="hero-lead">Planning Tomorrow, Innovating Urban Solutions<br class="br-desktop">도시계획부터 안전진단까지, 원칙을 지키는 설계와 현장을 이해하는 기술로 신뢰받는 기술파트너가 되겠습니다.</p>
+            <div class="hero-actions">
+                <a href="#business" class="btn btn-primary">사업분야 보기</a>
+                <a href="#projects" class="btn btn-ghost">수행실적</a>
+            </div>
+        </div>
+        <div class="container hero-fields" aria-label="사업분야 요약">
+            <a href="#business">도시/단지</a>
+            <a href="#business">인프라</a>
+            <a href="#business">건설사업관리</a>
+            <a href="#business">안전진단</a>
+            <a href="#business">공공측량</a>
+            <a href="#business">기업부설연구소</a>
         </div>
     </section>
 
     <!-- 회사소개 -->
     <section id="company" class="section company">
         <div class="container">
-            <h2 class="section-title">회사소개</h2>
-            <div class="company-content">
+            <div class="section-head">
+                <span class="section-eyebrow">About Us</span>
+                <h2 class="section-title">회사소개</h2>
+            </div>
+
+            <!-- 대표 인사말 -->
+            <div class="ceo-message">
+                <figure class="ceo-photo">
+                    <img src="images/ceo.jpg" alt="(주)새암이앤씨 대표이사 박용희">
+                    <figcaption>
+                        <strong>박용희</strong>
+                        <span>대표이사 / 도시계획 특급기술자</span>
+                    </figcaption>
+                </figure>
                 <div class="company-text">
-                    <h3>인사말</h3>
+                    <h3>대표 인사말</h3>
+                    <p class="greeting-lead">도시는 오랜 시간이 축적되는 공간이며,<br>그 기반은 정확한 계획과 책임 있는 설계에서 시작됩니다.</p>
                     <p>
-                        안녕하십니까.
+                        (주)새암이앤씨는 2025년 7월 설립 이후 도시계획과 토목설계, 건설사업관리 분야 등에서 기본에 충실한 기술 서비스를 제공하기 위해 노력하고 있습니다.
                     </p>
                     <p>
-                        저희 (주)새암이앤씨는 도시계획/단지개발, 인프라 구축, 건설사업관리, 안전진단, 공공측량 분야의 전문 엔지니어링 기업입니다.
+                        전문 엔지니어링 기업으로서 공공의 책임성과 민간의 효율성을 균형 있게 이해하며, 각 사업의 목적과 여건에 맞는 최적의 계획을 수립하는 것이 저희의 역할이라고 생각합니다. 원칙과 기준을 준수하고, 충분한 검토와 합리적인 판단을 통해 사업의 목적에 가장 적합한 대안을 제시하고자 합니다.
                     </p>
                     <p>
-                        축적된 기술력과 풍부한 경험을 바탕으로 고객 여러분께 
-                        최상의 엔지니어링 서비스를 제공하겠습니다.
+                        (주)새암이앤씨는 <strong class="highlight">‘원칙을 지키는 설계, 현장을 이해하는 기술, 결과로 증명하는 책임’</strong>을 기업의 핵심 가치로 삼고 있습니다. 작은 프로젝트 하나에도 최선을 다하며, 신뢰받는 기술파트너로 자리매김하겠습니다.
+                    </p>
+                    <p>
+                        인천을 기반으로 지역과 함께 성장하며, 기술로 신뢰를 쌓아가는 기업이 되겠습니다.
                     </p>
                     <p class="signature">
-                        <strong>(주)새암이앤씨 대표 박용희 / 임직원 일동</strong>
+                        (주)새암이앤씨 대표이사 <strong>박용희</strong>
                     </p>
                 </div>
-                <div class="company-image">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" alt="건물 이미지">
+            </div>
+
+            <!-- 핵심 수치 -->
+            <ul class="stats">
+                <li><strong>30<span>명</span></strong><span class="stat-label">총 인력</span></li>
+                <li><strong>11<span>명</span></strong><span class="stat-label">특급기술자</span></li>
+                <li><strong>8<span>명</span></strong><span class="stat-label">기술사 / 석·박사</span></li>
+                <li><strong>18<span>건</span></strong><span class="stat-label">보유 면허·등록</span></li>
+            </ul>
+
+            <!-- 개요 + 조직 -->
+            <div class="company-grid">
+                <div class="company-facts">
+                    <h3 class="sub-title">기업 개요 <span>Overview</span></h3>
+                    <dl>
+                        <div class="fact">
+                            <dt>회사명</dt>
+                            <dd>(주)새암이앤씨 <span class="fact-sub">SaeAmENC</span></dd>
+                        </div>
+                        <div class="fact">
+                            <dt>대표이사</dt>
+                            <dd>박용희</dd>
+                        </div>
+                        <div class="fact">
+                            <dt>설립일</dt>
+                            <dd>2025년 7월 21일</dd>
+                        </div>
+                        <div class="fact">
+                            <dt>사업자등록번호</dt>
+                            <dd>190-81-03686</dd>
+                        </div>
+                        <div class="fact">
+                            <dt>소재지</dt>
+                            <dd>인천광역시 남동구 예술로204번길 35, 503호 (구월동, 해인빌딩)</dd>
+                        </div>
+                        <div class="fact">
+                            <dt>연락처</dt>
+                            <dd>TEL 032-719-4265 · FAX 032-719-4459</dd>
+                        </div>
+                    </dl>
+                </div>
+                <div class="org">
+                    <h3 class="sub-title">조직 구성 <span>Organization</span></h3>
+                    <div class="org-top">대표이사</div>
+                    <div class="org-grid">
+                        <div class="org-unit">
+                            <h4>도시 본부</h4>
+                            <ul>
+                                <li>도시계획부</li>
+                                <li>단지설계부</li>
+                                <li>조경부</li>
+                                <li>환경부</li>
+                            </ul>
+                        </div>
+                        <div class="org-unit">
+                            <h4>인프라 본부</h4>
+                            <ul>
+                                <li>도로부</li>
+                                <li>구조부</li>
+                                <li>지반부</li>
+                                <li>교통계획부</li>
+                            </ul>
+                        </div>
+                        <div class="org-unit">
+                            <h4>건설사업 본부</h4>
+                            <ul>
+                                <li>건설사업관리부</li>
+                                <li>안전진단부</li>
+                            </ul>
+                        </div>
+                        <div class="org-unit">
+                            <h4>지원 본부</h4>
+                            <ul>
+                                <li>업무부</li>
+                                <li>관리부</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- 주요 임원진 -->
+            <h3 class="sub-title">주요 임원진 <span>Executive</span></h3>
+            <div class="exec-grid">
+                <article class="exec-card">
+                    <div class="exec-head">
+                        <h4>박용희</h4>
+                        <p>대표이사 / 도시계획 특급기술자</p>
+                    </div>
+                    <ul class="career">
+                        <li>국토연구원 (1998 ~ 2002)</li>
+                        <li>동호 (2002 ~ 2009)</li>
+                        <li>도담이앤씨 (2010 ~ 2025, 전무, 도시본부장)</li>
+                        <li>새암이앤씨 (2025 ~ 현재)</li>
+                    </ul>
+                    <ul class="career committee">
+                        <li>인천광역시 미추홀구 도시계획심의위원회 위원</li>
+                    </ul>
+                </article>
+                <article class="exec-card">
+                    <div class="exec-head">
+                        <h4>김완규</h4>
+                        <p>부사장 / 토목 특급기술자</p>
+                    </div>
+                    <ul class="career">
+                        <li>인천광역시청 근무 (1978 ~ 1998)</li>
+                        <li>장원기술단 (2001 ~ 2008)</li>
+                        <li>원광건설 (2009 ~ 2012)</li>
+                        <li>도담이앤씨 (2012 ~ 2026, 부사장, 건설사업관리본부장)</li>
+                        <li>새암이앤씨 (2026 ~ 현재)</li>
+                    </ul>
+                </article>
+                <article class="exec-card">
+                    <div class="exec-head">
+                        <h4>함지혜</h4>
+                        <p>상무 / 도시계획 특급기술자</p>
+                    </div>
+                    <ul class="career">
+                        <li>(주)자연 (2005 ~ 2006)</li>
+                        <li>도담이앤씨 (2006 ~ 2025, 상무, 도시계획부서장)</li>
+                        <li>새암이앤씨 (2025 ~ 현재)</li>
+                    </ul>
+                    <ul class="career committee">
+                        <li>인천광역시 남동구·서해구 도시계획심의위원회 위원</li>
+                        <li>인천광역시 부평구 환경정책심의위원회 위원</li>
+                        <li>인천광역시 검단구 건축위원회 위원</li>
+                    </ul>
+                </article>
+            </div>
+
+            <!-- 면허 현황 -->
+            <h3 class="sub-title">면허 · 등록 현황 <span>Certifications</span></h3>
+            <ul class="license-grid">
+                <li>건설기술용역업 – 설계·사업관리(일반)</li>
+                <li>엔지니어링 – 도시계획</li>
+                <li>엔지니어링 – 조경</li>
+                <li>엔지니어링 – 교통</li>
+                <li>엔지니어링 – 도로·공항</li>
+                <li>엔지니어링 – 상하수도</li>
+                <li>엔지니어링 – 구조</li>
+                <li>엔지니어링 – 토질·지질</li>
+                <li>엔지니어링 – 수질관리</li>
+                <li>엔지니어링 – 항만·해안</li>
+                <li>엔지니어링 – 수자원개발</li>
+                <li>공공측량업 · 일반측량업</li>
+                <li>안전진단전문기관 (교량 및 터널)</li>
+                <li>안전진단전문기관 (철도시설 구조물)</li>
+                <li>산업디자인전문회사 (환경디자인)</li>
+                <li>학술·연구용역</li>
+                <li>직접생산확인증명서 (지질연구조사서비스)</li>
+                <li>직접생산확인증명서 (측량용역)</li>
+            </ul>
+            <p class="note">2026년 7월 기준</p>
         </div>
     </section>
 
     <!-- 사업분야 -->
     <section id="business" class="section business">
         <div class="container">
-            <h2 class="section-title">사업분야</h2>
-            <div class="business-grid">
-                <div class="business-card">
-                    <div class="card-icon">
-                        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&q=80" alt="도시/단지">
-                    </div>
-                    <h3>도시/단지</h3>
-                    <p>도시개발사업, 택지개발, 산업단지 조성 등 체계적인 도시계획 및 단지설계 서비스를 제공합니다.</p>
-                </div>
-                <div class="business-card">
-                    <div class="card-icon">
-                        <img src="images/infra.jpg" alt="인프라">
-                    </div>
-                    <h3>인프라</h3>
-                    <p>도로, 교량, 상하수도 등 사회기반시설의 설계 서비스를 제공합니다.</p>
-                </div>
-                <div class="business-card">
-                    <div class="card-icon">
-                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80" alt="건설사업관리">
-                    </div>
-                    <h3>건설사업관리</h3>
-                    <p>건설 프로젝트의 기획부터 준공까지 전 과정을 체계적으로 관리합니다.</p>
-                </div>
-                <div class="business-card">
-                    <div class="card-icon">
-                        <img src="images/safety.jpg" alt="안전진단">
-                    </div>
-                    <h3>안전진단</h3>
-                    <p>시설물의 안전점검 및 정밀안전진단을 통해 구조물의 안전성을 확보합니다.</p>
-                </div>
-                <div class="business-card">
-                    <div class="card-icon">
-                        <img src="images/survey.jpg" alt="공공측량">
-                    </div>
-                    <h3>공공측량</h3>
-                    <p>정밀한 측량 기술로 토지, 지형, 시설물에 대한 정확한 데이터를 제공합니다.</p>
-                </div>
-                <div class="business-card">
-                    <div class="card-icon">
-                        <img src="images/research.jpg" alt="기업부설연구소">
-                    </div>
-                    <h3>기업부설연구소</h3>
-                    <p>첨단 기술 연구개발을 통해 엔지니어링 분야의 혁신을 선도합니다.</p>
-                </div>
+            <div class="section-head">
+                <span class="section-eyebrow">Business</span>
+                <h2 class="section-title">사업분야</h2>
+                <p class="section-desc">계획과 설계, 관리와 진단, 측량과 연구까지 건설 엔지니어링 전 과정을 수행합니다.</p>
             </div>
+            <div class="business-grid">
+                <article class="business-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80" alt="" loading="lazy">
+                        <span class="card-num">01</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>도시/단지</h3>
+                        <p>도시개발사업, 택지개발, 산업단지 조성 등 체계적인 도시계획 및 단지설계 서비스를 제공합니다.</p>
+                        <ul class="card-list">
+                            <li>도시기본계획 · 도시관리계획</li>
+                            <li>지구단위계획 · 도시계획시설 결정</li>
+                            <li>산업단지 · 도시개발 · 관광단지</li>
+                            <li>정비사업 · 재생사업 · 개발행위허가</li>
+                            <li>교통영향평가 · 조경 계획 및 설계</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="business-card">
+                    <div class="card-image">
+                        <img src="images/infra.jpg" alt="" loading="lazy">
+                        <span class="card-num">02</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>인프라</h3>
+                        <p>도로, 교량, 상하수도 등 사회기반시설의 설계 서비스를 제공합니다.</p>
+                        <ul class="card-list">
+                            <li>도로 기본 및 실시설계</li>
+                            <li>도로건설 경제성 · 타당성조사</li>
+                            <li>구조 · 지반 · 상하수도 설계</li>
+                            <li>도로 시설물 설계 · 운영관리 계획</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="business-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="" loading="lazy">
+                        <span class="card-num">03</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>건설사업관리</h3>
+                        <p>건설 프로젝트의 기획부터 준공까지 전 과정을 체계적으로 관리합니다.</p>
+                        <ul class="card-list">
+                            <li>시공감리</li>
+                            <li>품질관리 · 공정관리</li>
+                            <li>원가관리 · 안전관리</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="business-card">
+                    <div class="card-image">
+                        <img src="images/safety.jpg" alt="" loading="lazy">
+                        <span class="card-num">04</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>안전진단</h3>
+                        <p>시설물의 안전점검 및 정밀안전진단을 통해 구조물의 안전성을 확보합니다.</p>
+                        <ul class="card-list">
+                            <li>시설물 구조안정성 평가</li>
+                            <li>보수 · 보강 방안 제시</li>
+                            <li>정기 · 정밀 안전점검, 유지관리 점검</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="business-card">
+                    <div class="card-image">
+                        <img src="images/survey.jpg" alt="" loading="lazy">
+                        <span class="card-num">05</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>공공측량</h3>
+                        <p>정밀한 측량 기술로 토지, 지형, 시설물에 대한 정확한 데이터를 제공합니다.</p>
+                        <ul class="card-list">
+                            <li>공공측량업 · 일반측량업 등록</li>
+                            <li>측량용역 직접생산확인</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="business-card">
+                    <div class="card-image">
+                        <img src="images/research.jpg" alt="" loading="lazy">
+                        <span class="card-num">06</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>기업부설연구소</h3>
+                        <p>첨단 기술 연구개발을 통해 엔지니어링 분야의 혁신을 선도합니다.</p>
+                        <ul class="card-list">
+                            <li>학술 · 연구용역</li>
+                            <li>지질연구조사서비스 직접생산확인</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 수행실적 -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-eyebrow">Track Record</span>
+                <h2 class="section-title">주요 수행실적</h2>
+                <p class="section-desc">설립 이후 인천광역시 재정사업과 민간 개발사업을 중심으로 수행한 주요 과업입니다.</p>
+            </div>
+            <div class="table-wrap">
+                <table class="project-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">사업명</th>
+                            <th scope="col">발주처</th>
+                            <th scope="col">분야</th>
+                            <th scope="col">과업기간</th>
+                            <th scope="col">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><span class="tag tag-public">재정</span></td><td>인천 공업지역기본계획 수립</td><td>인천광역시 (도시계획과)</td><td>도시계획</td><td>2025.09 ~ 2025.10</td><td><span class="done">완료</span></td></tr>
+                        <tr><td><span class="tag tag-public">재정</span></td><td>2030 인천 도시관리계획 정비</td><td>인천광역시 (도시계획과)</td><td>도시계획</td><td>2025.09 ~ 2025.11</td><td><span class="done">완료</span></td></tr>
+                        <tr><td><span class="tag tag-public">재정</span></td><td>서구 일원 공업지역 지구단위계획 수립 용역</td><td>인천광역시 (도시계획과)</td><td>도시계획</td><td>2026.02 ~ 2026.11</td><td></td></tr>
+                        <tr><td><span class="tag tag-public">재정</span></td><td>신개념 실내체육관 도시관리계획(시설:도로) 결정(변경)</td><td>인천시 서구 (문화관광체육과)</td><td>도시계획</td><td>2026.03 ~ 2026.09</td><td><span class="done">완료</span></td></tr>
+                        <tr><td><span class="tag tag-public">재정</span></td><td>송현로 외 2개소 노후도로 및 보도블록 실시설계 용역</td><td>인천시 동구 (건설과)</td><td>도로</td><td>2026.05 ~ 2026.07</td><td><span class="done">완료</span></td></tr>
+                        <tr><td><span class="tag tag-public">재정</span></td><td>항산도항 해안데크 정밀안전점검 용역</td><td>인천시 강화군 (해양수산과)</td><td>안전진단</td><td>2026.06 ~ 2026.09</td><td><span class="done">완료</span></td></tr>
+                        <tr><td><span class="tag tag-public">재정</span></td><td>2026 하반기 미추홀구 도로시설물 정기안전점검 용역</td><td>종합건설본부 (도로관리부)</td><td>안전진단</td><td>2026.07 ~ 2026.12</td><td></td></tr>
+                        <tr><td><span class="tag tag-public">재정</span></td><td>만월-만수산 연결다리 안전점검 용역</td><td>인천광역시 남동구 (공원녹지과)</td><td>안전진단</td><td>2026.08 ~ 2026.10</td><td><span class="done">완료</span></td></tr>
+                        <tr><td><span class="tag tag-private">민간</span></td><td>미추홀구 용현·학익 7BL 지구단위계획 변경</td><td>㈜미라클시티 외 1</td><td>도시계획</td><td>2025.07 ~ 2025.11</td><td><span class="done">완료</span></td></tr>
+                        <tr><td><span class="tag tag-private">민간</span></td><td>서구 오류·금곡구역 도시개발사업</td><td>HY도시개발(유)</td><td>도시계획</td><td>2025.08 ~ 2028.12</td><td></td></tr>
+                        <tr><td><span class="tag tag-private">민간</span></td><td>서구 검단16호공원 개발행위 특례사업</td><td>도담이앤씨</td><td>도시계획</td><td>2025.08 ~ 2026.12</td><td></td></tr>
+                        <tr><td><span class="tag tag-private">민간</span></td><td>검단지구 특별계획구역1 세부개발계획</td><td>㈜신영</td><td>도시계획</td><td>2025.08 ~ 2026.10</td><td><span class="done">완료</span></td></tr>
+                        <tr><td><span class="tag tag-private">민간</span></td><td>송도 국제업무단지(C8-1) 실시계획 변경</td><td>고려자산개발㈜</td><td>도시계획</td><td>2025.09 ~ 2026.08</td><td><span class="done">완료</span></td></tr>
+                        <tr><td><span class="tag tag-private">민간</span></td><td>동구 일진전기 개발을 위한 사업화방안 수립</td><td>일진전기㈜</td><td>도시계획</td><td>2025.07 ~ 2025.12</td><td><span class="done">완료</span></td></tr>
+                        <tr><td><span class="tag tag-private">민간</span></td><td>서구 마전2구역 도시개발사업 자문</td><td>마전2구역 도시개발사업조합</td><td>도시계획</td><td>2025.10 ~ 2027.06</td><td></td></tr>
+                        <tr><td><span class="tag tag-private">민간</span></td><td>남동구 만수동 소규모주택정비 관리지역 지정</td><td>아주 1차추진위 외 3</td><td>도시계획</td><td>2025.10 ~ 2027.12</td><td></td></tr>
+                        <tr><td><span class="tag tag-private">민간</span></td><td>중구 항동1-1 특별계획구역 실시계획인가</td><td>인천항동더원피에프브이㈜</td><td>도시계획</td><td>2026.02 ~ 2027.01</td><td></td></tr>
+                        <tr><td><span class="tag tag-private">민간</span></td><td>중로3-697호선 외 1개노선 실시계획인가</td><td>㈜아이타워컨벤션 외 1</td><td>도시계획</td><td>2026.03 ~ 2026.10</td><td><span class="done">완료</span></td></tr>
+                        <tr><td><span class="tag tag-private">민간</span></td><td>김포 구래 도시개발사업 조사설계 용역</td><td>㈜구래도시개발</td><td>도시계획</td><td>2026.03 ~ 2027.12</td><td></td></tr>
+                        <tr><td><span class="tag tag-private">민간</span></td><td>인천 검암역세권 공공주택지구 훼손지 복구계획</td><td>㈜동명 외 3</td><td>도시계획</td><td>2026.03 ~ 2026.12</td><td></td></tr>
+                        <tr><td><span class="tag tag-private">민간</span></td><td>IHP산업단지 관리기본계획 변경 용역</td><td>㈜진성</td><td>도시계획</td><td>2026.04 ~ 2026.12</td><td></td></tr>
+                        <tr><td><span class="tag tag-private">민간</span></td><td>인천 남동공단 데이터센터 도시계획위원회 심의 용역</td><td>LS일렉트릭㈜</td><td>도시계획</td><td>2026.05 ~ 2026.09</td><td><span class="done">완료</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="note">사내 기술자들은 인천광역시 관내 각종 업무를 20년 이상 수행하며 축적한 노하우와 관련 자료를 바탕으로 인천광역시 관련 부서와 원활한 협업 체계를 구축하고 있습니다.</p>
         </div>
     </section>
 
     <!-- 연혁 -->
     <section id="history" class="section history">
         <div class="container">
-            <h2 class="section-title">연혁</h2>
+            <div class="section-head">
+                <span class="section-eyebrow">History</span>
+                <h2 class="section-title">연혁</h2>
+            </div>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">2026</div>
-                    <div class="timeline-content">
-                        <h4>4/29 &nbsp; 직접생산증명원(측량용역) 등록</h4>
-                        <h4>4/22 &nbsp; 산업디자인전문회사(환경디자인) 등록</h4>
-                        <h4>4/20 &nbsp; 공공측량업 등록</h4>
-                        <h4>4/15 &nbsp; 직접생산증명원(지질연구조사서비스) 등록</h4>
-                        <h4>4/02 &nbsp; 안전진단전문기관(교량및터널) 등록</h4>
-                        <h4>3/09 &nbsp; 학술·연구(1169) 등록</h4>
-                        <h4>1/14 &nbsp; 건설기술용역업(일반) 등록</h4>
-                    </div>
+                    <div class="timeline-year">2026</div>
+                    <ul class="timeline-list">
+                        <li><time>7/23</time><span>철도시설안전진단전문기관(구조물) 등록</span></li>
+                        <li><time>4/29</time><span>직접생산증명원(측량용역) 등록</span></li>
+                        <li><time>4/22</time><span>산업디자인전문회사(환경디자인) 등록</span></li>
+                        <li><time>4/20</time><span>공공측량업 등록</span></li>
+                        <li><time>4/15</time><span>직접생산증명원(지질연구조사서비스) 등록</span></li>
+                        <li><time>4/02</time><span>안전진단전문기관(교량및터널) 등록</span></li>
+                        <li><time>3/09</time><span>학술·연구(1169) 등록</span></li>
+                        <li><time>1/14</time><span>건설기술용역업(일반) 등록</span></li>
+                    </ul>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-date">2025</div>
-                    <div class="timeline-content">
-                        <h4>9/11 &nbsp; 엔지니어링업(도시계획 외 7개) 등록</h4>
-                        <h4>7/21 &nbsp; ㈜새암이앤씨 설립</h4>
-                    </div>
+                    <div class="timeline-year">2025</div>
+                    <ul class="timeline-list">
+                        <li><time>9/11</time><span>엔지니어링업(도시계획 외 9개) 등록</span></li>
+                        <li><time>7/21</time><span>㈜새암이앤씨 설립</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -154,11 +448,15 @@
     <!-- 새암소식 -->
     <section id="news" class="section news">
         <div class="container">
-            <h2 class="section-title">새암소식</h2>
+            <div class="section-head">
+                <span class="section-eyebrow">News</span>
+                <h2 class="section-title">새암소식</h2>
+            </div>
             <div class="news-list">
                 <div class="news-item">
-                    <span class="news-date">2026.02.13</span>
+                    <span class="news-tag">공지</span>
                     <span class="news-title">홈페이지를 오픈하였습니다.</span>
+                    <time class="news-date">2026.02.13</time>
                 </div>
             </div>
         </div>
@@ -167,16 +465,19 @@
     <!-- 오시는 길 -->
     <section id="contact" class="section contact">
         <div class="container">
-            <h2 class="section-title">오시는 길</h2>
+            <div class="section-head">
+                <span class="section-eyebrow">Contact</span>
+                <h2 class="section-title">오시는 길</h2>
+            </div>
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <div class="info-item">
                         <h4>주소</h4>
-                        <p>인천 남동구 예술로 204번길 35, 해인빌딩 503호</p>
+                        <p>인천광역시 남동구 예술로204번길 35,<br>해인빌딩 503호</p>
                     </div>
                     <div class="info-item">
                         <h4>전화</h4>
-                        <p>032-719-4265</p>
+                        <p><a href="tel:032-719-4265">032-719-4265</a></p>
                     </div>
                     <div class="info-item">
                         <h4>팩스</h4>
@@ -184,17 +485,19 @@
                     </div>
                     <div class="info-item">
                         <h4>이메일</h4>
-                        <p>hjw@saeamenc.co.kr</p>
+                        <p><a href="mailto:hjw@saeamenc.co.kr">hjw@saeamenc.co.kr</a></p>
                     </div>
+                    <a class="btn btn-light" href="https://map.naver.com/p/search/%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%82%A8%EB%8F%99%EA%B5%AC%20%EC%98%88%EC%88%A0%EB%A1%9C204%EB%B2%88%EA%B8%B8%2035" target="_blank" rel="noopener">네이버 지도에서 보기</a>
                 </div>
                 <div class="contact-map">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.8694726!2d126.7055!3d37.4508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z7J247LKcIOuCqOuPmeq1rCDsmIjsiKDroZwgMjA067KI6ri4IDM1!5e0!3m2!1sko!2skr!4v1600000000000!5m2!1sko!2skr" 
-                        width="100%" 
-                        height="350" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.8694726!2d126.7055!3d37.4508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z7J247LKcIOuCqOuPmeq1rCDsmIjsiKDroZwgMjA067KI6ri4IDM1!5e0!3m2!1sko!2skr!4v1600000000000!5m2!1sko!2skr"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        title="(주)새암이앤씨 위치 지도">
                     </iframe>
                 </div>
             </div>
@@ -205,33 +508,39 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
+                <div class="footer-brand">
                     <img src="images/logo.png" alt="(주)새암이앤씨" class="footer-logo-img">
+                    <p class="footer-tagline">Planning Tomorrow, Innovating Urban Solutions</p>
                 </div>
+                <nav class="footer-nav" aria-label="푸터 메뉴">
+                    <a href="#company">회사소개</a>
+                    <a href="#business">사업분야</a>
+                    <a href="#projects">수행실적</a>
+                    <a href="#history">연혁</a>
+                    <a href="#news">새암소식</a>
+                    <a href="#contact">오시는 길</a>
+                </nav>
                 <div class="footer-info">
-                    <p>사업자등록번호 : 190-81-03686 / 대표자 : 박용희</p>
-                    <p>주소 : 인천광역시 남동구 예술로204번길 35, 해인빌딩 503호</p>
-                    <p>TEL: 032-719-4265 | FAX: 032-719-4459 | E-mail: hjw@saeamenc.co.kr</p>
+                    <p>(주)새암이앤씨 · 대표이사 박용희 · 사업자등록번호 190-81-03686</p>
+                    <p>인천광역시 남동구 예술로204번길 35, 해인빌딩 503호</p>
+                    <p>TEL 032-719-4265 · FAX 032-719-4459 · E-mail hjw@saeamenc.co.kr</p>
                 </div>
-                <div class="footer-copyright">
-                    <p>Copyright © 2025 (주)새암이앤씨. All Rights Reserved.</p>
-                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright © 2025 (주)새암이앤씨. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- 퀵메뉴 -->
-    <aside class="quick-menu">
-        <a href="#business" class="quick-item">
-            <span>사업분야</span>
-        </a>
-        <a href="#contact" class="quick-item">
-            <span>오시는 길</span>
-        </a>
-        <a href="tel:032-719-4265" class="quick-item phone">
-            <span>전화문의</span>
-        </a>
+    <aside class="quick-menu" aria-label="퀵메뉴">
+        <a href="#business" class="quick-item">사업분야</a>
+        <a href="#contact" class="quick-item">오시는 길</a>
+        <a href="tel:032-719-4265" class="quick-item phone">전화문의</a>
     </aside>
+    <button class="scroll-top" aria-label="맨 위로">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V20h-2V8.8l-4.6 4.6L5 12z"/></svg>
+    </button>
 
     <script src="js/main.js"></script>
 </body>
